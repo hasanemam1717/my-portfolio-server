@@ -58,7 +58,6 @@ const deleteBlog = catchAsync(async (req, res) => {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars, no-unused-vars
     const id = req.params.id
     const result = await blogService.deleteBlog(id);
-    console.log(result);
     sendResponse(res, {
         statusCode: 200,
         success: true,
