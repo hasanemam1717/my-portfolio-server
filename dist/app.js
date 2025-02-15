@@ -11,7 +11,7 @@ const cors_1 = __importDefault(require("cors"));
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
 // app.use(cookieParser())
-app.use((0, cors_1.default)({ origin: 'http://localhost:3000', credentials: true }));
+app.use((0, cors_1.default)({ origin: 'https://porifolio-eta.vercel.app', credentials: true }));
 app.use('/', blog_route_1.default);
 app.use('/', auth_route_1.default);
 app.get('/', (req, res) => {

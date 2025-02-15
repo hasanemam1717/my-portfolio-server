@@ -7,7 +7,7 @@ const app = express()
 
 app.use(express.json())
 // app.use(cookieParser())
-app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
+app.use(cors({ origin: 'https://porifolio-eta.vercel.app', credentials: true }));
 
 app.use('/', blogRoute)
 app.use('/', authRoute)
